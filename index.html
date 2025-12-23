@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <form>
+
+                <h1 class="centered">Job Application Form</h1>
+
+
+                <label for="name" class="subheader">Full Name: </label>
+                <input name="name" type="text" id="name" placeholder="Enter your full name" required>
+
+
+                <label for="email" class="subheader">Email: </label>
+                <input name="email" type="email" id="email" placeholder="Enter your Email" required>
+
+
+                <label for="position" class="subheader">Position: </label>
+                <select id="position" name="position" required>
+                    <option value="">-- select a position --</option>
+                    <option value="frontend">Front-End Developer</option>
+                    <option value="backend">Back-End Developer</option>
+                    <option value="fullstack">Full-Stack Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="manager">Manager</option>
+                </select>
+
+
+                <fieldset class="radio-group">
+                    <legend>Availability:</legend>
+                    <div>
+                        <input id="full-time" class="radio-btn" type="radio" name="availability" value="full-time"
+                            checked>
+                        <label class="radio" for="full-time">Full-Time</label>
+                    </div>
+                    <div>
+                        <input class="radio-btn" type="radio" id="part-time" name="availability" value="part-time">
+                        <label class="radio" for="part-time">Part-Time</label>
+                    </div>
+                </fieldset>
+
+
+
+                <label for="message" class="subheader">
+                    Why do you want this job?
+                </label>
+                <textarea id="message" name="message" minlength="20" maxlength="400" rows="10"
+                    placeholder="What's your motivation" required></textarea>
+
+                <button type="submit" class="submit-btn">Submit Form</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
